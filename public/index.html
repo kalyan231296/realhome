@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamNest Realty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .go-button {
+      padding: 1rem 2rem;
+      background: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(26, 188, 156, 0.4);
+      transition: background 0.3s, transform 0.2s;
+    }
+    .go-button:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>DreamNest Realty</h1>
+  <div class="gallery">
+    <img src="https://www.google.com/search?sca_esv=ccb8066356fd07b7&q=beautiful+homes&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeiAkWG4OlBE2zyCTMjPbGmMU8EWskMk2JSE__efdUJ3xRFvZ0M2vJLB0hUMk5HOE2PrrvQUbCpf1tXMIFuQhcIK7-3jqfXVI1BAoMJERzoWH9l2kfJENwd71FG3jsc7yc0nulpC2D86sbRVulyRXS7FupBXAhWzI06Ez0wAtmo0NYaLdAw&sa=X&ved=2ahUKEwjymNCMlouOAxXJ4QIHHRZyJtMQtKgLKAF6BAgSEAE&biw=1366&bih=607&dpr=1#vhid=UvQIEGGCSRtzfM&vssid=mosaic" alt="Property 1">
+    <img src="https://via.placeholder.com/600x400?text=Modern+Apartment" alt="Property 2">
+    <img src="https://via.placeholder.com/600x400?text=Beach+House" alt="Property 3">
+    <img src="https://via.placeholder.com/600x400?text=City+Penthouse" alt="Property 4">
+  </div>
+  <button class="go-button" onclick="window.location.href='https://www.google.com'">Go</button>
+</body>
+</html>
